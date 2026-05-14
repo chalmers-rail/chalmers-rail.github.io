@@ -161,8 +161,8 @@ nav ul a:hover { color: var(--blue); text-decoration: none; }
 }
 
 .dot {
-  width: 9px;
-  height: 9px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   border: 1.5px solid rgba(255,255,255,0.55);
   background: transparent;
@@ -1399,9 +1399,9 @@ nav ul a.nav-active {
   background: none;
   border: 1.5px solid rgba(255,255,255,0.45);
   color: rgba(255,255,255,0.75);
-  font-size: 0.9rem;
-  width: 28px;
-  height: 28px;
+  font-size: 0.65rem;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
