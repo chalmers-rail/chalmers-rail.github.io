@@ -1,7 +1,0 @@
-mirror-to-github:
-  stage: deploy
-  rules:
-    - if: $CI_COMMIT_BRANCH == "deploy"
-  script:
-    - git remote add github https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/chalmers-rail/chalmers-rail.github.io.git
-    - git push github HEAD:main --force
