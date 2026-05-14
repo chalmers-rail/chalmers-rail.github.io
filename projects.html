@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – RAIL Lab</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logos/rail_logo_small.png" alt="RAIL Lab" /></a>
+      <ul>
+        <li><a href="projects.html" class="nav-active">Projects</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="assets/logos/chalmers_logo.png" alt="Chalmers University of Technology" class="nav-chalmers" />
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <p class="page-hero-label">RAIL Lab</p>
+      <h1>Research Projects</h1>
+      <p class="page-hero-sub">
+        Ongoing and recent funded projects at RAIL. For full details see the
+        <a href="https://research.chalmers.se/person/shivesh" target="_blank" style="color:rgba(255,255,255,0.9);text-decoration:underline">Chalmers Research Portal</a>.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- PROJECT 1 -->
+      <div class="project-entry">
+        <div class="project-entry-header">
+          <div>
+            <span class="project-funder">SSF Future Research Leader (FFL-9) · 15,000,000 SEK · 2025–2030</span>
+            <h2 class="project-title">AI-based Holistic Co-Design of Legged Robots</h2>
+          </div>
+          <a href="https://research.chalmers.se/project/12409" target="_blank" class="project-link">Project page →</a>
+        </div>
+        <div class="project-entry-body">
+          <div class="project-desc-row">
+            <div>
+              <p>
+                This project develops an interactive generative framework for collaborative robot design.
+                Using natural language interaction, the framework proposes legged robots tailored to specific
+                applications by integrating robot design, motion planning, and control engineering with formal
+                stability guarantees. Target applications span hospitality, healthcare, search-and-rescue,
+                and planetary exploration.
+              </p>
+              <p>
+                A core scientific challenge is the simultaneous co-optimisation of mechanical design, motion
+                trajectories, and closed-loop controllers — producing robots that are provably robust to
+                hardware imperfections and model uncertainty from the design stage.
+              </p>
+            </div>
+            <img src="assets/projects/codesign.png" alt="Co-design of legged robots" class="project-photo" />
+          </div>
+          <div class="project-meta-row">
+            <span><strong>PI:</strong> Shivesh Kumar</span>
+            <span><strong>PhD Student:</strong> Raphael Stockner</span>
+            <span><strong>Postdoc:</strong> Farhad Mehdifar (from Jun 2026)</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Legged robots</span>
+            <span class="tag">Co-design</span>
+            <span class="tag">Motion planning</span>
+            <span class="tag">Optimal control</span>
+            <span class="tag">Stability guarantees</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="project-entry">
+        <div class="project-entry-header">
+          <div>
+            <span class="project-funder">WASP PhD Project Grant · 4,000,000 SEK · 2024–2029</span>
+            <h2 class="project-title">AI-Driven Constrained Optimal Control for Bi-manual Loco-Manipulation</h2>
+          </div>
+          <a href="https://research.chalmers.se/project/12139" target="_blank" class="project-link">Project page →</a>
+        </div>
+        <div class="project-entry-body">
+          <div class="project-desc-row">
+            <div>
+              <p>
+                This project develops an AI-driven framework for optimal control with constraints for
+                bi-manual loco-manipulation using humanoid mobile robots. The framework handles hundreds
+                of geometric constraints arising from both external manipulation tasks and internal
+                closed-loop robot designs.
+              </p>
+              <p>
+                Key contributions include kinodynamic motion planning and stabilising control for mobile
+                bases, and learning from demonstration to automatically identify task constraints. The
+                framework is evaluated on Mobile YuMi and RH5 Manus platforms for assembly applications.
+              </p>
+            </div>
+            <img src="assets/projects/wasp_dualarm_manip.png" alt="Bi-manual loco-manipulation" class="project-photo" />
+          </div>
+          <div class="project-meta-row">
+            <span><strong>PI:</strong> Shivesh Kumar</span>
+            <span><strong>PhD Student:</strong> Joan Badia i Torres</span>
+            <span><strong>Collaborators:</strong> H. Johansson, P. Piiroinen (Chalmers)</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Constrained optimal control</span>
+            <span class="tag">Bi-manual manipulation</span>
+            <span class="tag">Humanoid robots</span>
+            <span class="tag">Learning from demonstration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-entry">
+        <div class="project-entry-header">
+          <div>
+            <span class="project-funder">Chalmers Area of Advance Transport · 2,000,000 SEK · 2025–2026</span>
+            <h2 class="project-title">Towards Digital Twins of the Human Body for Individualized Safety</h2>
+          </div>
+          <a href="https://research.chalmers.se/project/11684" target="_blank" class="project-link">Project page →</a>
+        </div>
+        <div class="project-entry-body">
+          <div class="project-desc-row">
+            <div>
+              <p>
+                A workflow for extracting anthropometric information from photographs to create individualized
+                digital twins for injury assessment across diverse populations — including women, obese
+                individuals, and elderly — who are underrepresented in standard crash test dummies.
+              </p>
+              <p>
+                The pipeline combines deep learning for anthropometric parameter recognition, convex geometric
+                optimisation for mass distribution estimation, and multibody dynamics to generate digital
+                twins with accurate anatomical landmarks and inertial properties.
+              </p>
+            </div>
+            <img src="assets/projects/human_digital_twin.png" alt="Human digital twin" class="project-photo" style="width:380px" />
+          </div>
+          <div class="project-meta-row">
+            <span><strong>PI:</strong> Shivesh Kumar</span>
+            <span><strong>Collaborators:</strong> J. Davidsson (Vehicle Safety, ME), H. Johansson (Dynamics, ME), J. John (Vehicle Safety, ME), K. Ramirez-Amaro (E2)</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Digital twins</span>
+            <span class="tag">Human body modelling</span>
+            <span class="tag">Vehicle safety</span>
+            <span class="tag">Biomechanics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="project-entry">
+        <div class="project-entry-header">
+          <div>
+            <span class="project-funder">Chalmers Foundation Digitalization Initiative · 500,000 SEK · 2025–2026</span>
+            <h2 class="project-title">Swinging Pendulums in the Cloud</h2>
+          </div>
+          <a href="https://research.chalmers.se/project/12140" target="_blank" class="project-link">Project page →</a>
+        </div>
+        <div class="project-entry-body">
+          <div class="project-desc-row">
+            <div>
+              <p>
+                A digital platform for programming coursework that provides immediate feedback to students,
+                integrating multibody dynamics simulations and live hardware video streams of pendulum systems
+                in cloud environments. Supports courses in programming, AI, dynamics, robotics, and control,
+                with semi-automated grading for instructors.
+              </p>
+              <p>
+                Delivered the <a href="https://cloudpendulum.m2.chalmers.se/" target="_blank">CloudPendulum</a>
+                ecosystem at RAIL, making physical experiment infrastructure accessible to
+                students and researchers worldwide.
+              </p>
+            </div>
+            <div style="display:flex;flex-direction:row;gap:0.75rem;flex-shrink:0;align-items:center">
+              <img src="assets/projects/simple_pendulum.jpeg" alt="Simple pendulum hardware" class="project-photo" style="width:130px" />
+              <img src="assets/projects/CP_Logo.png" alt="CloudPendulum logo" class="project-photo" style="width:160px;object-fit:contain" />
+            </div>
+          </div>
+          <div class="project-meta-row">
+            <span><strong>PI:</strong> Marco L. Della Vedova (VEAS, ME)</span>
+            <span><strong>Co-PI:</strong> Shivesh Kumar</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">CloudPendulum</span>
+            <span class="tag">Education</span>
+            <span class="tag">Cloud robotics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 5 -->
+      <div class="project-entry">
+        <div class="project-entry-header">
+          <div>
+            <span class="project-funder">Chalmers Innovation Office · 196,000 SEK · 2025</span>
+            <h2 class="project-title">Double Pendulum in the Cloud</h2>
+          </div>
+          <a href="https://research.chalmers.se/project/12265" target="_blank" class="project-link">Project page →</a>
+        </div>
+        <div class="project-entry-body">
+          <div class="project-desc-row">
+            <div>
+              <p>
+                A robot-as-a-service (RaaS) double pendulum functioning as both Acrobot and Pendubot
+                platforms, cloud-connected for remote access by students, researchers, and industry.
+                Users can test optimal control and reinforcement learning algorithms remotely on physical
+                hardware — bridging simulation and real-world deployment.
+              </p>
+            </div>
+            <div style="display:flex;flex-direction:row;gap:0.75rem;flex-shrink:0;align-items:center">
+              <img src="assets/projects/double_pendulum.jpeg" alt="Double pendulum hardware" class="project-photo" style="width:130px" />
+              <img src="assets/projects/CP_Logo.png" alt="CloudPendulum logo" class="project-photo" style="width:160px;object-fit:contain" />
+            </div>
+          </div>
+          <div class="project-meta-row">
+            <span><strong>PI:</strong> Shivesh Kumar</span>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Robot-as-a-service</span>
+            <span class="tag">Acrobot / Pendubot</span>
+            <span class="tag">Cloud access</span>
+            <span class="tag">Benchmarking</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logos/chalmers_emblem.svg" alt="" class="footer-emblem" />
+        <div class="footer-text">
+          <p>Robot Athletic Intelligence Lab</p>
+          <p>Department of Mechanical Engineering</p>
+          <p>Chalmers University of Technology · Gothenburg, Sweden</p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <img src="assets/logos/chalmers_logo.png" alt="Chalmers University of Technology" class="footer-chalmers-logo" />
+        <div class="footer-links">
+        
+        <a href="research.html">Research</a><a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html" class="nav-active">Projects</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

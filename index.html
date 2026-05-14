@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAIL Lab – Robot Athletic Intelligence Lab, Chalmers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/logos/rail_logo_small.png" alt="RAIL Lab" /></a>
+      <ul>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="assets/logos/chalmers_logo.png" alt="Chalmers University of Technology" class="nav-chalmers" />
+    </div>
+  </nav>
+
+  <!-- HERO SLIDESHOW -->
+  <header class="hero hero-slideshow">
+
+    <div class="slideshow">
+
+      <!-- Slide 1: Vision -->
+      <div class="slide active">
+        <img src="assets/hero/go2_headstand_garden.jpeg" alt="" />
+        <div class="slide-text">
+          <div class="slide-text-inner">
+            <p class="hero-label">Robot Athletic Intelligence Lab · Chalmers University of Technology</p>
+            <h1>Our Vision</h1>
+            <p class="hero-title">Next-generation versatile automation<br>with highly dynamic robots.</p>
+            <p class="hero-tagline">We develop physical and athletic intelligence for underactuated robots, legged machines, and humanoids — bridging optimal control, multi-body dynamics, and machine learning.</p>
+            <div class="hero-links">
+              <a href="research.html">Our Research →</a>
+              <button class="jingle-btn" onclick="document.getElementById('jingle-modal').classList.add('open');document.getElementById('jingle-video').play()">▶ Play Intro</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: PI -->
+      <div class="slide">
+        <img src="assets/hero/PI_HeroBanner.jpeg" alt="" style="object-position: center 20%;" />
+        <span class="slide-photo-credit">Photo: Lisa Jabar</span>
+        <div class="slide-text">
+          <div class="slide-text-inner">
+            <p class="hero-label">Principal Investigator</p>
+            <h1>Shivesh Kumar</h1>
+            <p class="hero-title">
+              Assistant Professor (Tenure Track)<br>
+              Department of Mechanical Engineering<br>
+              Chalmers University of Technology, Gothenburg
+            </p>
+            <p class="hero-tagline">PhD <em>summa cum laude</em>, University of Bremen (2019) · Team Leader: Mechanics &amp; Control Team and Founder of Underactuated Robotics Lab, DFKI Bremen (2019–2023) · SSF Future Research Leader (2025–2030) · New Generation Star in Robotics Research, IROS 2024</p>
+            <div class="hero-links">
+              <a href="https://scholar.google.co.in/citations?user=2DlIOTsAAAAJ" target="_blank">Google Scholar</a>
+              <a href="https://orcid.org/0000-0002-6254-3882" target="_blank">ORCID</a>
+              <a href="https://www.chalmers.se/en/persons/shivesh/" target="_blank">Chalmers Profile</a>
+              <a href="mailto:shivesh.kumar@chalmers.se">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Motto -->
+      <div class="slide">
+        <img src="assets/hero/gothenburg_science_festival.JPG" alt="" style="object-position: center 30%;" />
+        <div class="slide-text">
+          <div class="slide-text-inner">
+            <p class="hero-label">Our Motto</p>
+            <h1>Athletic Intelligence</h1>
+            <p class="hero-tagline" style="font-size:1.05rem;opacity:0.9;font-style:normal;">Robots that move with the agility, efficiency, and resilience found in nature — underactuated, dynamic, and certifiably robust. An AI that is physically grounded yet connected to cognitive aspects of intelligence.</p>
+            <div class="hero-links">
+              <a href="research.html">Research Themes →</a>
+              <a href="projects.html">Funded Projects →</a>
+              <a href="teaching.html">Teaching →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Awards & Funding -->
+      <div class="slide">
+        <img src="assets/hero/hej.jpeg" alt="" />
+        <div class="slide-text">
+          <div class="slide-text-inner">
+            <p class="hero-label">Grants &amp; Recognition</p>
+            <h1>Awards &amp; Funding</h1>
+            <p class="hero-tagline" style="font-size:1rem;opacity:0.9;font-style:normal;line-height:1.9;">
+              🏅 SSF Future Research Leader Grant · 15 MSEK · 2025–2030<br>
+              🏅 WASP PhD Project Grant · 4 MSEK · 2024–2029<br>
+              🏆 EuroGNC 2024 Best Paper Award<br>
+              ⭐ New Generation Star in Robotics Research — IEEE/RSJ IROS 2024<br>
+              🤖 No. of Robots: 7
+            </p>
+            <div class="hero-links">
+              <a href="projects.html">All Projects →</a>
+              <a href="publications.html">Publications →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Join the Lab -->
+      <div class="slide">
+        <img src="assets/hero/go2_standing_chalmers_garden.jpeg" alt="" />
+        <div class="slide-text">
+          <div class="slide-text-inner">
+            <p class="hero-label">Join the Lab</p>
+            <h1>Open Positions</h1>
+            <p class="hero-tagline" style="font-size:1rem;opacity:0.9;font-style:normal;">We welcome motivated PhD students, postdoctoral researchers, and master's thesis students passionate about underactuated robotics, optimal control, reinforcement learning, and open reproducible science.</p>
+            <div class="hero-links">
+              <a href="people.html">Meet the Team →</a>
+              <a href="contact.html">Get in Touch →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.slideshow -->
+
+    <!-- Dot navigation -->
+    <div class="slide-dots" id="slide-dots">
+      <button class="dot active" data-slide="0"></button>
+      <button class="dot" data-slide="1"></button>
+      <button class="dot" data-slide="2"></button>
+      <button class="dot" data-slide="3"></button>
+      <button class="dot" data-slide="4"></button>
+      <button class="slide-playpause" id="slide-playpause" aria-label="Pause slideshow">⏸</button>
+    </div>
+
+  </header>
+
+  <script>
+    (function() {
+      const slides = document.querySelectorAll('.slide');
+      const dots   = document.querySelectorAll('.dot');
+      let cur = 0, timer;
+      let playing = true;
+      const btn = document.getElementById('slide-playpause');
+
+      function goTo(n) {
+        slides[cur].classList.remove('active');
+        dots[cur].classList.remove('active');
+        cur = (n + slides.length) % slides.length;
+        slides[cur].classList.add('active');
+        dots[cur].classList.add('active');
+      }
+
+      function start() { timer = setInterval(() => goTo(cur + 1), 6000); }
+      function stop()  { clearInterval(timer); }
+      function reset() { stop(); start(); }
+
+      btn.addEventListener('click', () => {
+        if (playing) { stop(); btn.textContent = '▶'; btn.setAttribute('aria-label', 'Play slideshow'); }
+        else         { start(); btn.textContent = '⏸'; btn.setAttribute('aria-label', 'Pause slideshow'); }
+        playing = !playing;
+      });
+
+      dots.forEach(d => d.addEventListener('click', () => { goTo(+d.dataset.slide); if (playing) reset(); }));
+      start();
+    })();
+  </script>
+
+  <!-- JINGLE MODAL -->
+  <div id="jingle-modal" class="jingle-modal" onclick="if(event.target===this){this.classList.remove('open');document.getElementById('jingle-video').pause();document.getElementById('jingle-video').currentTime=0;}">
+    <div class="jingle-modal-inner">
+      <button class="jingle-close" onclick="document.getElementById('jingle-modal').classList.remove('open');document.getElementById('jingle-video').pause();document.getElementById('jingle-video').currentTime=0;">×</button>
+      <video id="jingle-video" src="assets/logos/rail_logo_5s.mp4" controls></video>
+    </div>
+  </div>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="stat"><span class="stat-num">7</span><span class="stat-label">Robots</span></div>
+    <div class="stat"><span class="stat-num">22.5M</span><span class="stat-label">SEK Grants</span></div>
+    <div class="stat"><span class="stat-num">1</span><span class="stat-label">Postdoc</span></div>
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">PhD Students</span></div>
+    <div class="stat"><span class="stat-num">8</span><span class="stat-label">Master's Students</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="container">
+      <h2>About</h2>
+      <div style="display:flex; gap:2rem; align-items:center;">
+        <div style="flex:1;">
+          <p>
+            The Robot Athletic Intelligence Lab (RAIL) at Chalmers University of Technology develops
+            next-generation physical and athletic intelligence for robotic systems — underactuated robots,
+            legged machines, and humanoids. Our research spans multibody dynamics, optimal control,
+            reinforcement learning, generative AI, and the co-design of hardware and algorithms.
+          </p>
+          <p>
+            Shivesh Kumar received his doctorate (<em>summa cum laude</em>) from the University of Bremen (2019)
+            and subsequently led the Team Mechanics &amp; Control and Underactuated Robotics Lab at DFKI, Bremen
+            (2019–2023), before joining Chalmers in October 2023. He is a recipient of the SSF Future Research
+            Leader grant (15 MSEK, 2025–2030) and was named a <em>New Generation Star in Robotics</em>
+            at IEEE/RSJ IROS 2024.
+          </p>
+        </div>
+        <img src="assets/logos/rail_logo.png" alt="RAIL Lab Logo" style="width:300px; flex-shrink:0;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH PREVIEW -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Research</h2>
+        <a href="projects.html" class="see-all">See all projects →</a>
+      </div>
+      <div class="theme-grid">
+        <div class="theme-card">
+          <div class="theme-icon">⚙</div>
+          <h3>Series-Parallel Hybrid Robots</h3>
+          <p>HyRoDyn framework, whole-body control in actuation space, trajectory optimisation, and co-design. Elsevier book on this class of systems.</p>
+        </div>
+        <div class="theme-card">
+          <div class="theme-icon">🏃</div>
+          <h3>Underactuated Systems &amp; Benchmarking</h3>
+          <p>Open platforms (pendulum, acrobot, AcroMonk, CloudPendulum) for reproducible benchmarking of optimal control and RL on physical hardware.</p>
+        </div>
+        <div class="theme-card">
+          <div class="theme-icon">🔬</div>
+          <h3>Optimal Control &amp; Co-Design</h3>
+          <p>Simultaneous optimisation of mechanical design, motion planning, and controller. Region-of-attraction maximisation, MPC for legged locomotion.</p>
+        </div>
+        <div class="theme-card">
+          <div class="theme-icon">🌐</div>
+          <h3>Applications</h3>
+          <p>Rehabilitation, space, medical robotics, and quantum optimal control — demonstrating generality of the athletic intelligence framework.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Selected Publications</h2>
+        <a href="publications.html" class="see-all">All 87 publications →</a>
+      </div>
+      <ul class="pub-list">
+        <li>
+          <span class="pub-venue">RA-M 2025</span>
+          Reinforcement Learning for Robust Athletic Intelligence: Lessons Learned From the Second AI Olympics With RealAIGym Competition.
+          <a href="https://doi.org/10.1109/MRA.2025.3631571" target="_blank" class="pub-doi">DOI →</a>
+        </li>
+        <li>
+          <span class="pub-venue">IJCAI 2024</span>
+          Reinforcement Learning for Athletic Intelligence: Lessons from the 1st AI Olympics with RealAIGym Competition.
+          <a href="https://doi.org/10.24963/ijcai.2024/1043" target="_blank" class="pub-doi">DOI →</a>
+        </li>
+        <li>
+          <span class="pub-venue">IROS 2025</span>
+          Cloud Pendulum: Democratizing Hardware Access for Robotics Education and Research.
+        </li>
+        <li>
+          <span class="pub-venue">Elsevier</span>
+          <em>Biologically Inspired Series-Parallel Hybrid Robots: Design, Analysis, and Control.</em>
+          <a href="https://doi.org/10.1016/C2020-0-02362-5" target="_blank" class="pub-doi">DOI →</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PEOPLE PREVIEW -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>People</h2>
+        <a href="people.html" class="see-all">Meet the team →</a>
+      </div>
+      <div class="people-grid">
+        <div class="person-card person-lead">
+          <img src="assets/people/shivesh.jpg" alt="Shivesh Kumar" class="member-photo" />
+          <h3>Shivesh Kumar</h3>
+          <p class="person-role">Principal Investigator</p>
+        </div>
+        <div class="person-card">
+          <img src="assets/people/farhad.jpeg" alt="Farhad Mehdifar" class="member-photo" />
+          <h3>Farhad Mehdifar</h3>
+          <p class="person-role">Postdoctoral Researcher</p>
+          <p class="person-note">Starting June 2026 (SSF FFL-9)</p>
+        </div>
+        <div class="person-card">
+          <img src="assets/people/yu_hung.jpeg" alt="Yu-Hung Pai" class="member-photo" />
+          <h3>Yu-Hung Pai</h3>
+          <p class="person-role">PhD Student (Co-supervised)</p>
+          <p class="person-note">Fault diagnosis for rotordynamic systems</p>
+        </div>
+        <div class="person-card">
+          <img src="assets/people/raphael.jpg" alt="Raphael Stockner" class="member-photo" style="object-position: 55% 20%;" />
+          <h3>Raphael Stockner</h3>
+          <p class="person-role">PhD Student</p>
+          <p class="person-note">AI-based co-design of legged robots (SSF)</p>
+        </div>
+        <div class="person-card">
+          <img src="assets/people/sahand.jpg" alt="Sahand Wagemakers" class="member-photo" style="object-position: 65% 20%;" />
+          <h3>Sahand Wagemakers</h3>
+          <p class="person-role">PhD Student</p>
+          <p class="person-note">Dynamics and Control of Legged Robots with Flexible Elements</p>
+        </div>
+        <div class="person-card">
+          <img src="assets/people/joan_badia.jpeg" alt="Joan Badia" class="member-photo" />
+          <h3>Joan Badia</h3>
+          <p class="person-role">PhD Student</p>
+          <p class="person-note">Constrained optimal control for loco-manipulation (WASP)</p>
+        </div>
+        <div class="person-card person-open">
+          <h3>Open Positions</h3>
+          <p class="person-role">PhD &amp; Master's Students</p>
+          <p class="person-note"><a href="contact.html">Get in touch →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRANTS PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Grants &amp; Funding</h2>
+        <a href="projects.html" class="see-all">Full funding overview →</a>
+      </div>
+      <div class="grant-list">
+        <div class="grant">
+          <div class="grant-meta">
+            <span class="grant-funder">SSF · Future Research Leader</span>
+            <span class="grant-amount">15,000,000 SEK</span>
+          </div>
+          <h3>AI-based Holistic Co-Design of Legged Robots</h3>
+          <p>2025–2030 · Sole PI</p>
+        </div>
+        <div class="grant">
+          <div class="grant-meta">
+            <span class="grant-funder">WASP · PhD Project Grant</span>
+            <span class="grant-amount">4,000,000 SEK</span>
+          </div>
+          <h3>AI-Driven Constrained Optimal Control for Bi-manual Loco-Manipulation</h3>
+          <p>2024–2029 · Sole PI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS PREVIEW -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Recent Recognition</h2>
+      <ul class="award-list">
+        <li><span class="award-year">2024</span> New Generation Star in Robotics Research — IEEE/RSJ IROS 2024</li>
+        <li><span class="award-year">2024</span> EuroGNC 2024 Best Paper Award</li>
+        <li><span class="award-year">2024</span> Outstanding Paper Award for Young Scientists — COSPAR/CNES</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logos/chalmers_emblem.svg" alt="" class="footer-emblem" />
+        <div class="footer-text">
+          <p>Robot Athletic Intelligence Lab</p>
+          <p>Department of Mechanical Engineering</p>
+          <p>Chalmers University of Technology · Gothenburg, Sweden</p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <img src="assets/logos/chalmers_logo.png" alt="Chalmers University of Technology" class="footer-chalmers-logo" />
+        <div class="footer-links">
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
