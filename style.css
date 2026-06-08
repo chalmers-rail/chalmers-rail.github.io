@@ -1451,6 +1451,17 @@ nav ul a.nav-active {
   object-fit: cover;
 }
 
+/* ── ABOUT ROW ──────────────────────────────────── */
+.about-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.about-logo {
+  width: 300px;
+  flex-shrink: 0;
+}
+
 /* ── HAMBURGER MENU ─────────────────────────────── */
 .nav-hamburger {
   display: none;
@@ -1516,6 +1527,10 @@ nav ul a.nav-active {
   .section { padding: 3rem 1.25rem; }
   .section-header { flex-direction: column; gap: 0.25rem; }
   .container { padding: 0; }
+
+  /* About */
+  .about-row { flex-direction: column; }
+  .about-logo { width: 180px; align-self: center; }
 
   /* People */
   .pi-card { flex-direction: column; gap: 1.5rem; }
