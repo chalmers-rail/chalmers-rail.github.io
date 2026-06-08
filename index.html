@@ -23,6 +23,7 @@
         <li><a href="publications.html">Publications</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.classList.toggle('open');document.querySelector('nav ul').classList.toggle('open')"><span></span><span></span><span></span></button>
       <img src="assets/logos/chalmers_logo.png" alt="Chalmers University of Technology" class="nav-chalmers" />
     </div>
   </nav>
@@ -390,5 +391,6 @@
     </div>
   </footer>
 
+<script>document.querySelectorAll("nav ul a").forEach(function(a){a.addEventListener("click",function(){document.querySelector("nav ul").classList.remove("open");document.querySelector(".nav-hamburger").classList.remove("open");})});</script>
 </body>
 </html>
