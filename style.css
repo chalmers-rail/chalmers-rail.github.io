@@ -1530,7 +1530,7 @@ nav ul a.nav-active {
 
   /* About */
   .about-row { flex-direction: column; }
-  .about-logo { width: 180px; align-self: center; }
+  .about-logo { width: 140px; align-self: center; }
 
   /* People */
   .pi-card { flex-direction: column; gap: 1.5rem; }
