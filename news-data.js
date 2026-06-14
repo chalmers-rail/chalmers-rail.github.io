@@ -1,14 +1,31 @@
 /* ── RAIL Lab news entries — edit this file to update both news.html and the homepage preview ──
-   Each entry: { date, category, title, link, linkText, body, tags }
-   - date: used for display only (string)
+   Each entry: { date, sortDate, category, title, link, linkText, body, tags }
+   - sortDate: ISO date "YYYY-MM-DD" — used for ordering (newest first)
+   - date: display string shown on the page
    - link / linkText: optional external link shown top-right on news.html
    - body: HTML string for the full news.html card body (can be empty string)
    - tags: array of strings (shown on news.html only)
-   Entries are listed newest-first; the homepage shows the first 5.
+   Entries should be kept newest-first by sortDate; the homepage shows the first 5.
 */
 const RAIL_NEWS = [
   {
-    date: "June 2026",
+    sortDate: "2026-06-14",
+    date: "14 June 2026",
+    category: "Service",
+    title: "Shivesh Kumar serves as General Chair of IPRoMM 2026, Bengaluru",
+    link: "https://ipromm2026.ammindia.org/",
+    linkText: "Conference website →",
+    body: `<p>Shivesh Kumar is serving as General Chair of the 4th International and 16th National
+Conference on Industrial Problems on Machines and Mechanisms (IPRoMM 2026),
+to be held December 20–22, 2026 at Amrita School of Engineering, Amrita Vishwa
+Vidyapeetham, Bengaluru, India.</p>
+<p><strong>Important Deadlines (Full-length Papers):</strong><br>
+Submission deadline: 30 June 2026 · Acceptance notification: 30 September 2026 · Camera-ready due: 31 October 2026</p>`,
+    tags: ["IPRoMM 2026", "General Chair", "Conference", "Mechanisms"],
+  },
+  {
+    sortDate: "2026-06-10",
+    date: "10 June 2026",
     category: "Open Position",
     title: "Postdoc opening: Modeling of Human-like Balance and Step Recovery",
     link: "https://www.chalmers.se/en/about-chalmers/work-with-us/vacancies/?rmpage=job&rmjob=14944&rmlang=UK",
@@ -20,7 +37,8 @@ humanoid robotics to biomechanics and transport safety.
     tags: ["Postdoc", "Biomechanics", "Humanoid robotics", "Transport safety"],
   },
   {
-    date: "June 2026",
+    sortDate: "2026-06-09",
+    date: "9 June 2026",
     category: "Competition",
     title: "AI Olympics with RealAIGym — official IJCAI-ECAI 2026 competition",
     link: "https://www.linkedin.com/posts/dfki-robotics-athleticintelligence-ugcPost-7467899206545002498-rmgu/",
@@ -35,7 +53,8 @@ Winners will present their results to an international audience at IJCAI-ECAI 20
     tags: ["AI Olympics", "IJCAI-ECAI 2026", "CloudPendulum", "Reinforcement learning", "Benchmarking"],
   },
   {
-    date: "June 2026",
+    sortDate: "2026-06-09",
+    date: "9 June 2026",
     category: "Award",
     title: "Yu-Hung Pai wins Jury Award at Chalmers Doctoral Day Pitch Competition",
     link: "https://www.linkedin.com/posts/yu-hung-pai-05aa72184_jury-award-2-minute-pitch-competition-ugcPost-7467559826194354176-WWPW/",
@@ -47,6 +66,7 @@ Dynamics, Department of Mechanical Engineering.</p>`,
     tags: ["Award", "Yu-Hung Pai", "Chalmers Doctoral Day"],
   },
   {
+    sortDate: "2026-06-25",
     date: "25 June 2026",
     category: "Talk · Outreach",
     title: "Humanoid Robotics on Stage at Almedalen 2026, Visby",
@@ -59,7 +79,8 @@ policy debate on Sweden's readiness for physical AI.</p>`,
     tags: ["Almedalen", "Humanoid robots", "Physical AI", "Visby"],
   },
   {
-    date: "June 2026",
+    sortDate: "2026-06-05",
+    date: "5 June 2026",
     category: "Talk",
     title: "Invited lecture at PKM 2026 Summer School, Montpellier",
     link: "https://www.linkedin.com/posts/shivesh-kumar-09044218_robotics-pkm2026-parallelrobots-ugcPost-7464243149230571520-om8c/",
@@ -71,7 +92,8 @@ a computationally efficient approach for loop-closure constraints and actuation-
     tags: ["Invited lecture", "Parallel robots", "Montpellier", "Sep 2026"],
   },
   {
-    date: "June 2026",
+    sortDate: "2026-06-02",
+    date: "2 June 2026",
     category: "People",
     title: "Farhad Mehdifar joins RAIL as Postdoctoral Researcher",
     link: "",
@@ -82,7 +104,8 @@ funded by the SSF Future Research Leader grant (FFL-9). Welcome, Farhad!</p>`,
     tags: [],
   },
   {
-    date: "June 2026",
+    sortDate: "2026-06-01",
+    date: "1 June 2026",
     category: "Funding",
     title: "New Chalmers AoA Transport grant: Human Balance and Step Recovery",
     link: "https://research.chalmers.se/en/project/12868",
@@ -95,7 +118,8 @@ design and rehabilitation aids.</p>`,
     tags: ["AoA Transport", "2 MSEK", "2027–2028"],
   },
   {
-    date: "May 2026",
+    sortDate: "2026-05-14",
+    date: "14 May 2026",
     category: "Talk · Outreach",
     title: "Keynote at Elektronikmässan 2026, Gothenburg",
     link: "https://www.linkedin.com/posts/shivesh-kumar-09044218_humanoidrobots-physicalai-robotics-ugcPost-7451551077092651008-Oyq6/",
@@ -110,3 +134,6 @@ hands-on interaction with the lab's work.</p>`,
     tags: ["Keynote", "Humanoid robots", "Physical AI", "Industry outreach"],
   },
 ];
+
+/* Sort by sortDate descending — ensures order is always correct regardless of entry position */
+RAIL_NEWS.sort(function(a, b) { return b.sortDate.localeCompare(a.sortDate); });
