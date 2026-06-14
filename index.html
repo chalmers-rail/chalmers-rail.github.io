@@ -16,11 +16,13 @@
       <a href="index.html" class="nav-logo"><img src="assets/logos/rail_logo_small.png" alt="RAIL Lab" /></a>
       <ul>
         
+        <li><a href="index.html" class="nav-active">Home</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="people.html">People</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="publications.html">Publications</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.classList.toggle('open');document.querySelector('nav ul').classList.toggle('open')"><span></span><span></span><span></span></button>
@@ -313,7 +315,7 @@
           <p class="person-note">Dynamics and Control of Legged Robots with Flexible Elements</p>
         </div>
         <div class="person-card">
-          <img src="assets/people/joan_badia.jpeg" alt="Joan Badia" class="member-photo" />
+          <img src="assets/people/joan_badia.png" alt="Joan Badia" class="member-photo" />
           <h3>Joan Badia</h3>
           <p class="person-role">PhD Student</p>
           <p class="person-note">Constrained optimal control for loco-manipulation (WASP)</p>
@@ -355,15 +357,14 @@
     </div>
   </section>
 
-  <!-- AWARDS PREVIEW -->
+  <!-- NEWS PREVIEW -->
   <section class="section section-alt">
     <div class="container">
-      <h2>Recent Recognition</h2>
-      <ul class="award-list">
-        <li><span class="award-year">2024</span> New Generation Star in Robotics Research — IEEE/RSJ IROS 2024</li>
-        <li><span class="award-year">2024</span> EuroGNC 2024 Best Paper Award</li>
-        <li><span class="award-year">2024</span> Outstanding Paper Award for Young Scientists — COSPAR/CNES</li>
-      </ul>
+      <div class="section-header">
+        <h2>Latest News</h2>
+        <a href="news.html" class="section-link">All news →</a>
+      </div>
+      <ol class="news-preview-list" id="news-preview-list"></ol>
     </div>
   </section>
 
@@ -380,17 +381,33 @@
       <div class="footer-right">
         <img src="assets/logos/chalmers_logo.png" alt="Chalmers University of Technology" class="footer-chalmers-logo" />
         <div class="footer-links">
-        
-        <a href="people.html">People</a>
-        <a href="publications.html">Publications</a>
-        <a href="news.html">News</a><a href="projects.html">Projects</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="contact.html">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="projects.html">Projects</a>
+          <a href="people.html">People</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="publications.html">Publications</a>
+          <a href="infrastructure.html">Infrastructure</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
     </div>
   </footer>
 
 <script>document.querySelectorAll("nav ul a").forEach(function(a){a.addEventListener("click",function(){document.querySelector("nav ul").classList.remove("open");document.querySelector(".nav-hamburger").classList.remove("open");})});</script>
+  <script src="news-data.js"></script>
+  <script>
+    (function () {
+      var list = document.getElementById("news-preview-list");
+      RAIL_NEWS.slice(0, 5).forEach(function (item) {
+        var href = item.link || "news.html";
+        list.innerHTML +=
+          '<li class="news-preview-item"><a href="' + href + '" target="' + (item.link ? "_blank" : "_self") + '">' +
+            '<p class="news-preview-meta">' + item.date + " · " + item.category + "</p>" +
+            '<p class="news-preview-title">' + item.title + "</p>" +
+          "</a></li>";
+      });
+    })();
+  </script>
 </body>
 </html>
