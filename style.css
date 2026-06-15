@@ -62,6 +62,14 @@ nav {
   border-radius: 4px;
 }
 
+.nav-lab-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-left: 0.6rem;
+  line-height: 1.25;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -544,8 +552,7 @@ footer {
 .footer-chalmers-logo {
   height: 28px;
   width: auto;
-  mix-blend-mode: screen;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .footer-links {
@@ -572,7 +579,7 @@ nav ul a.nav-active {
 .nav-logo:hover { text-decoration: none; }
 
 .nav-chalmers {
-  height: 26px;
+  height: 36px;
   width: auto;
   display: block;
   opacity: 0.75;
