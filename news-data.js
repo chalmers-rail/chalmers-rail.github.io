@@ -9,6 +9,34 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-06-22",
+    date: "22 June 2026",
+    category: "Teaching",
+    title: "TRA455 hackathon results: students teach a humanoid robot to solve an industrial manufacturing task",
+    link: "https://www.youtube.com/watch?v=lNUAFwbB44k&t=16s",
+    linkText: "Watch video →",
+    body: `<p>What does it take to teach a humanoid robot to interact with the real world?
+In this 3-week hackathon concluding the TRA455 <em>Athletic Intelligence in Robotics</em> course (SP4 2026),
+students from Chalmers University tackled challenges in grasping, locomotion, and real-world manipulation
+using a commercial humanoid robot. From theory to practice — the next generation of robotics engineers
+shaping the future of Physical AI.</p>`,
+    tags: ["Teaching", "TRA455", "Humanoid", "Hackathon", "Physical AI"],
+  },
+  {
+    sortDate: "2026-06-22",
+    date: "22 June 2026",
+    category: "Talk · Outreach",
+    title: "Human-humanoid interaction demo at Engaging India @ Almedalen 2026",
+    link: "https://www.linkedin.com/posts/next-week-30-leaders-from-sweden-and-india-ugcPost-7472045702152642560-dO70/",
+    linkText: "LinkedIn post →",
+    body: `<p>Shivesh Kumar will present a live human-humanoid interaction session at the
+<em>Engaging India @ Almedalen 2026</em> event, held at Uppsala University Campus Gotland
+(Visby). The event will bring together 30 leaders from Sweden and India — government officials,
+academics, and industry representatives — under the theme <strong>"AI, You & I — Identity,
+Industry, Innovation"</strong>.</p>`,
+    tags: ["Outreach", "Humanoid", "Almedalen", "Sweden-India", "Demo"],
+  },
+  {
     sortDate: "2026-06-14",
     date: "14 June 2026",
     category: "Service",

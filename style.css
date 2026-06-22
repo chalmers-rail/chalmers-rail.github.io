@@ -464,6 +464,44 @@ h2 {
 
 .grant p { font-size: 0.825rem; color: var(--muted); margin: 0; }
 
+/* Teaching preview on homepage */
+.course-code-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--blue);
+  padding: 0.15rem 0.55rem;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
+.course-code-badge-sm { font-size: 0.65rem; padding: 0.1rem 0.45rem; margin-bottom: 0; }
+.teaching-featured {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--blue);
+  border-radius: 0 4px 4px 0;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+.teaching-featured-body { flex: 1; }
+.teaching-featured-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+.teaching-featured p { font-size: 0.9rem; color: var(--muted); margin: 0; max-width: 680px; }
+.teaching-also { margin-top: 1.25rem; }
+.teaching-also-label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 0.6rem; }
+.teaching-also-list { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.teaching-also-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: var(--text); text-decoration: none; }
+.teaching-also-item:hover { color: var(--blue); }
+
 /* ── AWARDS ─────────────────────────────────────── */
 .award-list {
   list-style: none;
@@ -1148,6 +1186,27 @@ nav ul a.nav-active {
   border-radius: 4px;
   overflow: hidden;
   background: #000;
+}
+.teaching-yt-thumb {
+  position: relative;
+  display: block;
+  width: 280px;
+  flex-shrink: 0;
+  align-self: center;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #000;
+}
+.teaching-yt-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.teaching-yt-thumb .yt-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .course-video-thumb {
   display: block;
