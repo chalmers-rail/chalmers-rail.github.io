@@ -822,6 +822,37 @@ nav ul a.nav-active {
   margin-bottom: 0.75rem;
 }
 
+/* ── SORT BAR (projects page) ───────────────────── */
+.sort-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.sort-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-right: 0.25rem;
+}
+.sort-btn {
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  color: var(--muted);
+  transition: all 0.15s;
+  font-family: var(--font-sans);
+}
+.sort-btn:hover { border-color: var(--blue); color: var(--blue); }
+.sort-btn.active { background: var(--blue); border-color: var(--blue); color: #fff; }
+
 /* ── PUBLICATIONS PAGE ──────────────────────────── */
 .pub-filter-bar {
   display: flex;
@@ -914,6 +945,54 @@ nav ul a.nav-active {
 .alumni-list {
   list-style: none;
   border-top: 1px solid var(--border);
+}
+
+/* ── OUTREACH PAGE ───────────────────────────────── */
+.outreach-list {
+  list-style: none;
+  border-top: 1px solid var(--border);
+  margin-top: 1.25rem;
+}
+.outreach-list li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0.5rem 1.5rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.875rem;
+}
+.outreach-year {
+  font-weight: 600;
+  color: var(--blue);
+  white-space: nowrap;
+}
+.outreach-body { color: var(--text); }
+.outreach-body a { color: var(--blue); text-decoration: underline; }
+.outreach-body a:hover { color: var(--blue-dk); }
+.outreach-with-video { display: flex; gap: 1.5rem; align-items: stretch; overflow: hidden; }
+.outreach-with-video .outreach-list { min-width: 0; flex: 1; }
+.outreach-video-side {
+  width: 240px;
+  min-width: 240px;
+  flex-shrink: 0;
+  align-self: stretch;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+}
+.outreach-video-side img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.outreach-video-side .yt-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .alumni-list li {

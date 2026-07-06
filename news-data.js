@@ -9,6 +9,36 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-06-02",
+    date: "2 June 2026",
+    category: "Media Coverage",
+    title: "AI ska designa framtidens robotar — Framtidens Forskning",
+    link: "https://framtidensforskning.se/2026/06/02/ai-ska-designa-framtidens-robotar/",
+    linkText: "Read article →",
+    body: `<p>Framtidens Forskning features Shivesh Kumar's SSF-funded research on AI-based holistic co-design
+of legged robots. The article covers how all elements — system design, movement patterns, control
+algorithms, and safety guarantees — are optimised simultaneously rather than sequentially, with the
+goal of shortening development timelines and closing the sim-to-reality gap for physical AI systems.</p>`,
+    tags: ["Media", "SSF", "Co-design", "Physical AI", "Framtidens Forskning"],
+  },
+  {
+    sortDate: "2026-07-15",
+    date: "15–17 July 2026",
+    category: "Conference · Paper",
+    title: "Two papers to be presented at ISRM 2026, Hanoi, Vietnam",
+    link: "",
+    linkText: "",
+    body: `<p>Shivesh Kumar will present two papers at the International Symposium on Robotics and Mechatronics (ISRM 2026) in Hanoi, Vietnam:</p>
+<ul>
+  <li><strong>ODE vs DAE Formulations for Dynamic Simulation of a Four Bar Mechanism</strong> — Shivesh Kumar &amp; Remi Servajean
+    <a href="https://link.springer.com/chapter/10.1007/978-3-032-29469-2_36" target="_blank" class="pub-doi">DOI →</a></li>
+  <li><strong>An Inverted Compass Model for Passive Dynamic Brachiation</strong> — Shivesh Kumar, Nandhith Karthikeyan, Vegesna Siddhartha Varma, Xiao Yang, Petri T. Piiroinen &amp; Rajeevlochana Chittawadigi
+    <a href="https://link.springer.com/chapter/10.1007/978-3-032-29469-2_38" target="_blank" class="pub-doi">DOI →</a></li>
+</ul>
+<p>Both papers are published in the Springer <em>Robotics and Mechatronics</em> proceedings.</p>`,
+    tags: ["Conference", "ISRM 2026", "Hanoi", "Springer", "Mechatronics"],
+  },
+  {
     sortDate: "2026-06-22",
     date: "22 June 2026",
     category: "Teaching",
@@ -26,7 +56,7 @@ shaping the future of Physical AI.</p>`,
     sortDate: "2026-06-22",
     date: "22 June 2026",
     category: "Talk · Outreach",
-    title: "Human-humanoid interaction demo at Engaging India @ Almedalen 2026",
+    title: "Conversation on Humanoid Robotics with Prof. Shivesh Kumar at Engaging India @ Almedalen 2026, Visby",
     link: "https://www.linkedin.com/posts/next-week-30-leaders-from-sweden-and-india-ugcPost-7472045702152642560-dO70/",
     linkText: "LinkedIn post →",
     body: `<p>Shivesh Kumar will present a live human-humanoid interaction session at the

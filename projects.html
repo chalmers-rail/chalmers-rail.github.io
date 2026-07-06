@@ -23,6 +23,7 @@
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="infrastructure.html">Infrastructure</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.classList.toggle('open');document.querySelector('nav ul').classList.toggle('open')"><span></span><span></span><span></span></button>
@@ -44,8 +45,21 @@
   <section class="section">
     <div class="container">
 
+      <!-- SORT BAR -->
+      <div class="sort-bar">
+        <span class="sort-label">Sort by:</span>
+        <button class="sort-btn active" data-sort="default">Default</button>
+        <button class="sort-btn" data-sort="start-asc">Start Year ↑</button>
+        <button class="sort-btn" data-sort="start-desc">Start Year ↓</button>
+        <button class="sort-btn" data-sort="end-asc">End Year ↑</button>
+        <button class="sort-btn" data-sort="end-desc">End Year ↓</button>
+        <button class="sort-btn" data-sort="budget-desc">Budget ↓</button>
+        <button class="sort-btn" data-sort="budget-asc">Budget ↑</button>
+        <button class="sort-btn" data-sort="alpha">A → Z</button>
+      </div>
+
       <!-- PROJECT 1 -->
-      <div class="project-entry">
+      <div class="project-entry" data-start="2025" data-end="2030" data-budget="15000000" data-title="AI-based Holistic Co-Design of Legged Robots">
         <div class="project-entry-header">
           <div>
             <span class="project-funder">SSF Future Research Leader (FFL-9) · 15,000,000 SEK · 2025–2030</span>
@@ -87,7 +101,7 @@
       </div>
 
       <!-- PROJECT 2 -->
-      <div class="project-entry">
+      <div class="project-entry" data-start="2024" data-end="2029" data-budget="4000000" data-title="AI-Driven Constrained Optimal Control for Bi-manual Loco-Manipulation">
         <div class="project-entry-header">
           <div>
             <span class="project-funder">WASP PhD Project Grant · 4,000,000 SEK · 2024–2029</span>
@@ -127,7 +141,7 @@
       </div>
 
       <!-- PROJECT 3 -->
-      <div class="project-entry">
+      <div class="project-entry" data-start="2025" data-end="2026" data-budget="2000000" data-title="Towards Digital Twins of the Human Body for Individualized Safety">
         <div class="project-entry-header">
           <div>
             <span class="project-funder">Chalmers Area of Advance Transport · 2,000,000 SEK · 2025–2026</span>
@@ -165,7 +179,7 @@
       </div>
 
       <!-- PROJECT 4 -->
-      <div class="project-entry">
+      <div class="project-entry" data-start="2027" data-end="2028" data-budget="2000000" data-title="Modeling of Human Balance and Step Recovery in Public Transportation">
         <div class="project-entry-header">
           <div>
             <span class="project-funder">Chalmers Area of Advance Transport · 2,000,000 SEK · 2027–2028</span>
@@ -206,7 +220,7 @@
       </div>
 
       <!-- PROJECT 5 -->
-      <div class="project-entry">
+      <div class="project-entry" data-start="2025" data-end="2026" data-budget="500000" data-title="Swinging Pendulums in the Cloud">
         <div class="project-entry-header">
           <div>
             <span class="project-funder">Chalmers Foundation Digitalization Initiative · 500,000 SEK · 2025–2026</span>
@@ -247,7 +261,7 @@
       </div>
 
       <!-- PROJECT 6 -->
-      <div class="project-entry">
+      <div class="project-entry" data-start="2025" data-end="2025" data-budget="196000" data-title="Double Pendulum in the Cloud">
         <div class="project-entry-header">
           <div>
             <span class="project-funder">Chalmers Innovation Office · 196,000 SEK · 2025</span>
@@ -305,6 +319,7 @@
           <a href="teaching.html">Teaching</a>
           <a href="publications.html">Publications</a>
           <a href="infrastructure.html">Infrastructure</a>
+          <a href="outreach.html">Outreach</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
@@ -312,5 +327,34 @@
   </footer>
 
 <script>document.querySelectorAll("nav ul a").forEach(function(a){a.addEventListener("click",function(){document.querySelector("nav ul").classList.remove("open");document.querySelector(".nav-hamburger").classList.remove("open");})});</script>
+<script>
+  (function () {
+    var container = document.querySelector(".section .container");
+    var defaultOrder = Array.from(document.querySelectorAll(".project-entry"));
+
+    function getVal(el, attr) { return parseFloat(el.dataset[attr]); }
+
+    var comparators = {
+      "default":      function(a, b) { return defaultOrder.indexOf(a) - defaultOrder.indexOf(b); },
+      "start-asc":    function(a, b) { return getVal(a,"start") - getVal(b,"start"); },
+      "start-desc":   function(a, b) { return getVal(b,"start") - getVal(a,"start"); },
+      "end-asc":      function(a, b) { return getVal(a,"end")   - getVal(b,"end");   },
+      "end-desc":     function(a, b) { return getVal(b,"end")   - getVal(a,"end");   },
+      "budget-desc":  function(a, b) { return getVal(b,"budget")- getVal(a,"budget");},
+      "budget-asc":   function(a, b) { return getVal(a,"budget")- getVal(b,"budget");},
+      "alpha":        function(a, b) { return a.dataset.title.localeCompare(b.dataset.title); },
+    };
+
+    document.querySelectorAll(".sort-btn").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        document.querySelectorAll(".sort-btn").forEach(function(b){ b.classList.remove("active"); });
+        btn.classList.add("active");
+        var entries = Array.from(document.querySelectorAll(".project-entry"));
+        entries.sort(comparators[btn.dataset.sort]);
+        entries.forEach(function(el){ container.appendChild(el); });
+      });
+    });
+  })();
+</script>
 </body>
 </html>
