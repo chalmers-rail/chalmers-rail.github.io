@@ -22,6 +22,20 @@ goal of shortening development timelines and closing the sim-to-reality gap for 
     tags: ["Media", "SSF", "Co-design", "Physical AI", "Framtidens Forskning"],
   },
   {
+    sortDate: "2026-07-17",
+    date: "17 July 2026",
+    category: "Award",
+    title: "Best Research Paper Award Finalist at ISRM 2026, Hanoi",
+    link: "https://www.linkedin.com/posts/shivesh-kumar-09044218_robotics-iftomm-isrm2026-activity-7488252922787725313-F054",
+    linkText: "View LinkedIn post →",
+    body: `<p>Shivesh Kumar's paper <strong>"ODE vs DAE Formulations for Dynamic Simulation of a Four Bar Mechanism"</strong>
+(with Rémi Servajean) was named a Best Research Paper Award Finalist at the International Symposium on Robotics
+and Mechatronics (ISRM 2026) in Hanoi, Vietnam, part of IFTOMM. During the trip, Kumar also visited the Robotics
+Research Centre at Nanyang Technological University Singapore and toured VinDynamics, a Hanoi-based humanoid
+robotics startup.</p>`,
+    tags: ["Award", "ISRM 2026", "Hanoi", "Best Paper", "IFTOMM"],
+  },
+  {
     sortDate: "2026-07-15",
     date: "15–17 July 2026",
     category: "Conference · Paper",
