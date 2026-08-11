@@ -22,6 +22,25 @@ goal of shortening development timelines and closing the sim-to-reality gap for 
     tags: ["Media", "SSF", "Co-design", "Physical AI", "Framtidens Forskning"],
   },
   {
+    sortDate: "2026-08-04",
+    date: "4 August 2026",
+    category: "Grant",
+    title: "IEEE RAS grant awarded to organize the 2nd Optimization for Robotics Summer School",
+    link: "projects.html",
+    linkText: "View project →",
+    body: `<p>Shivesh Kumar has been awarded a 25,000 USD Technical Education Program grant by the IEEE Robotics
+and Automation Society to organize the <strong>2nd Optimization for Robotics Summer School</strong>, to be
+held 7–13 June 2027 at the Division of Dynamics, Department of Mechanical Engineering, Chalmers University
+of Technology. The 5-day, in-person school will provide a unified treatment of optimization across robotics —
+convex optimization, nonlinear programming, trajectory optimization, MPC, reinforcement learning, state
+estimation, and robot co-design — combining lectures with hands-on coding labs and a hardware hackathon day
+for around 100 participants. It is co-organized with Konstantinos Chatzilygeroudis (University of Patras),
+Brian Plancher (Dartmouth College), Zachary Manchester (MIT), and Enrico Mingo Hoffman (INRIA Nancy), and
+endorsed by the IEEE RAS Technical Committees on Model-based Optimization for Robotics and on Whole Body
+Control.</p>`,
+    tags: ["Grant", "IEEE RAS", "Summer School", "Optimization", "Education"],
+  },
+  {
     sortDate: "2026-07-17",
     date: "17 July 2026",
     category: "Award",
