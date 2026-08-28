@@ -41,6 +41,42 @@ Control.</p>`,
     tags: ["Grant", "IEEE RAS", "Summer School", "Optimization", "Education"],
   },
   {
+    sortDate: "2026-08-25",
+    date: "25 August 2026",
+    category: "PhD Defense",
+    title: "Shubham Vyas defends PhD thesis on robotic space debris removal",
+    link: "https://robotik.dfki-bremen.de/en/lehre/vortraege/graduiertenseminar-brown-bag-talks/vortragsdetails/phd-colloquium-shubham-vyas",
+    linkText: "Colloquium page →",
+    body: `<p>Congratulations to Shubham Vyas, co-supervised with Prof. Frank Kirchner, on
+successfully defending his PhD thesis <strong>"Momentum Based Classification and Sequential Controller
+Composition for Robotic Space Debris Removal"</strong> at the University of Bremen / DFKI Robotics Innovation
+Center.</p>
+<p>The thesis addresses two gaps in active debris removal (ADR) with robotic manipulators: a momentum-based
+classification scheme that evaluates whether specific debris objects — such as spent rocket stages — can
+realistically be captured by a given robotic system, and a control framework combining nonlinear trajectory
+optimization with a quaternion-based time-varying LQR and stability analysis, enabling real-time mission
+verification above 1&nbsp;kHz. The approach was experimentally validated on three free-floating testbeds with
+different actuation configurations.</p>`,
+    tags: ["PhD Defense", "Space Robotics", "Debris Removal", "Optimal Control", "DFKI"],
+  },
+  {
+    sortDate: "2026-08-21",
+    date: "21 August 2026",
+    category: "Competition",
+    title: "4th AI Olympics with RealAIGym concludes at IJCAI-ECAI 2026, Bremen",
+    link: "https://www.linkedin.com/posts/konstantinoschatzilygeroudis_robotics-optimalcontrol-modelpredictivecontrol-share-7498779327745028096-UkEz/",
+    linkText: "View LinkedIn post →",
+    body: `<p>The 4th AI Olympics with RealAIGym, co-organised by DFKI Robotics Innovation Center and RAIL, wrapped
+up as an official competition at IJCAI-ECAI 2026 in Bremen, Germany. Teams competed on the CloudPendulum
+testbed to swing up a two-link underactuated pendulum and stabilise it at the unstable upright equilibrium
+using only one actuator, on real hardware.</p>
+<p>Congratulations to <strong>Konstantinos Chatzilygeroudis</strong> and <strong>Nick Karydakis</strong> from the
+Laboratory of Automation and Robotics (LAR), University of Patras, who won both the Pendubot and Acrobot
+tracks with a real-time Nonlinear Model Predictive Control (NMPC) approach based on Sequential Quadratic
+Programming (SQP), handling swing-up and stabilisation within a single receding-horizon controller.</p>`,
+    tags: ["AI Olympics", "IJCAI-ECAI 2026", "CloudPendulum", "Optimal control", "NMPC", "Benchmarking"],
+  },
+  {
     sortDate: "2026-07-17",
     date: "17 July 2026",
     category: "Award",
