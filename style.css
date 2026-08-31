@@ -1805,6 +1805,7 @@ nav ul a.nav-active {
   .project-entry-header { flex-direction: column; gap: 0.5rem; }
   .project-desc-row { flex-direction: column; }
   .project-photo { width: 100% !important; max-height: 220px; object-fit: cover; }
+  .project-desc-row iframe { width: 100% !important; }
   .project-meta-row { flex-direction: column; gap: 0.5rem; }
 
   /* Teaching */

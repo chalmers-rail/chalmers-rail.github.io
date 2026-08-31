@@ -9,6 +9,24 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-08-28",
+    date: "28 August 2026",
+    category: "Media Coverage",
+    title: "Interview with Shivesh Kumar on humanoid robot development — Elektronikmässan",
+    link: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7500102234538655744",
+    linkText: "View LinkedIn post →",
+    body: `<div class="project-desc-row" style="align-items:center;">
+  <div>
+    <p>Advanced Engineering &amp; Elektronikmässan revisit a fireside chat with Shivesh Kumar from this year's
+fair in Gothenburg, discussing humanoid robot development and where the robotics sector is heading.</p>
+    <p>Recorded at Elektronikmässan 2026 in April and published now as robotics is set to be the fair's first
+focus area next year — watch the interview alongside for a look at what's ahead for humanoids and Physical AI.</p>
+  </div>
+  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7500102234538655744?compact=1" height="269" style="width:340px;max-width:100%;flex-shrink:0;border:none;border-radius:4px;" allowfullscreen title="Elektronikmässan 2026 interview — LinkedIn post"></iframe>
+</div>`,
+    tags: ["Media", "Elektronikmässan", "Humanoid Robotics", "Interview"],
+  },
+  {
     sortDate: "2026-06-02",
     date: "2 June 2026",
     category: "Media Coverage",
