@@ -464,6 +464,45 @@ h2 {
 
 .grant p { font-size: 0.825rem; color: var(--muted); margin: 0; }
 
+/* ── SPONSORS STRIP ─────────────────────────────── */
+.sponsor-block {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.sponsor-label {
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.sponsor-strip {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.sponsor-logo-box {
+  flex: 1;
+  min-width: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 /* Teaching preview on homepage */
 .course-code-badge {
   display: inline-block;
@@ -1027,6 +1066,8 @@ nav ul a.nav-active {
     gap: 0.15rem;
   }
   .alumni-meta { text-align: left; }
+  .sponsor-strip { flex-wrap: wrap; justify-content: center; row-gap: 1.25rem; }
+  .sponsor-logo-box { flex: 0 1 100px; height: 40px; }
 }
 
 .pub-venue-upcoming {
