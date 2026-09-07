@@ -9,6 +9,24 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-09-07",
+    date: "7 September 2026",
+    category: "Workshop · Call for Papers",
+    title: "Organizing IROS 2026 Workshop: Bridging Learning and Physics for Robust Whole-Body Robot Control",
+    link: "https://www.linkedin.com/posts/shivesh-kumar-09044218_iros2026-robotics-humanoids-share-7502657608156160000-DO60/",
+    linkText: "View LinkedIn post →",
+    body: `<p>Shivesh Kumar is co-organizing the IROS 2026 workshop <strong>"Bridging Learning and Physics for
+Robust Whole-Body Robot Control"</strong>, taking place Thursday, 1 October 2026 (08:00–12:30) in Pittsburgh,
+alongside Yasemin Bekiroglu, Chengxu Zhou, Kaiyu Hang, Mitesh Patel, Ajinkya Jain, and Olivier Stasse.</p>
+<p>The workshop addresses the intersection of learning-based and model-based control for humanoid and mobile
+manipulator systems, covering hierarchical optimization, imitation learning, whole-body perception and sensing,
+human-robot interaction, and real-world deployment challenges. Confirmed speakers include Patrick Wensing
+(Notre Dame), Andrew Morgan (Robotics &amp; AI Institute), Hae-Won Park (KAIST), and Guanya Shi (CMU).</p>
+<p><strong>Call for papers:</strong> 2-page extended abstracts (IROS template) — deadline 10 September 2026,
+notifications by 17 September 2026.</p>`,
+    tags: ["IROS 2026", "Workshop", "Call for Papers", "Whole-Body Control", "Humanoids"],
+  },
+  {
     sortDate: "2026-08-28",
     date: "28 August 2026",
     category: "Media Coverage",
