@@ -9,6 +9,25 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-09-15",
+    date: "15 September 2026",
+    category: "Award",
+    title: "Shivesh Kumar wins Chalmers Pedagogical Prize 2026",
+    link: "https://www.chalmers.se/en/current/news/pedagogical-prize-2026-trio-recognised-for-innovative-teaching/",
+    linkText: "Read article →",
+    body: `<p>Shivesh Kumar is one of three recipients of the Chalmers Pedagogical Prize 2026, alongside Åke Fäldt
+(Physics and Astronomy) and Gregory Gay (Computer Science and Engineering), each recognised for innovative
+teaching approaches and awarded SEK 30,000.</p>
+<p>Official citation: "Shivesh Kumar has developed and integrated the cloud-based learning platform
+<strong>CloudPendulum</strong>, providing students with direct access to real-world experiments in dynamics,
+control engineering, and robotics regardless of time and location. By combining physical experimental
+equipment, digital infrastructure, and thoughtful pedagogical design, he has created a learning environment in
+which students can explore, test, and refine their ideas through a close interaction between theory and
+practice. This initiative has increased student engagement, deepened conceptual understanding, and created new
+opportunities for scalable, accessible, and research-integrated engineering education."</p>`,
+    tags: ["Award", "Pedagogical Prize", "CloudPendulum", "Teaching"],
+  },
+  {
     sortDate: "2026-09-07",
     date: "7 September 2026",
     category: "Workshop · Call for Papers",
