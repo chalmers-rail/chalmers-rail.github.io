@@ -9,6 +9,23 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-09-25",
+    date: "21–25 September 2026",
+    category: "Talk",
+    title: "4th PKM 2026 Summer School concludes in Montpellier",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7509314766562062336/",
+    linkText: "View LinkedIn post →",
+    body: `<p>Shivesh Kumar taught at the Fourth Summer School on Parallel Kinematic Manipulators (PKM 2026),
+hosted at LIRMM, CNRS, University of Montpellier, France, and co-organised by Ahmed Chemori and Andreas Müller
+with support from IFToMM and Symétrie. Over 40 participants from 12 countries across 4 continents — PhD
+students, early-career researchers, engineers, and international experts — attended lectures from 11
+international speakers, hands-on simulation labs, and a facility tour hosted by Symétrie showcasing
+high-precision and heavy-load parallel kinematic manipulator applications.</p>
+<p>Kumar delivered the lecture <strong>"Modeling and Control of Series-Parallel Hybrid Robots"</strong> and
+organised an accompanying hands-on tutorial on the topic, using CloudPendulum, HyRoDyn, and Drake.</p>`,
+    tags: ["Invited lecture", "Parallel robots", "Montpellier", "PKM 2026", "Summer School"],
+  },
+  {
     sortDate: "2026-09-15",
     date: "15 September 2026",
     category: "Award",
