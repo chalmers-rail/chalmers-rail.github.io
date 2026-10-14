@@ -9,6 +9,23 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-10-13",
+    date: "13 October 2026",
+    category: "Panel Discussion",
+    title: "Panelist at Gothenburg Tech Week: Physical AI — The Cost of Being Wrong",
+    link: "https://www.linkedin.com/posts/roundtable-experts-at-tech-blueprint-13th-ugcPost-7513898738109693952-7QPE/",
+    linkText: "View LinkedIn post →",
+    body: `<p>Shivesh Kumar joined the <strong>"Physical AI: The Cost of Being Wrong"</strong> roundtable at the
+Tech Blueprint Roundtable Pavilion, part of Gothenburg Tech Week, held at World of Volvo, Gothenburg. The
+panel, one of eight roundtables on AI adoption across industry, research, and startups, explored what it takes
+to move from pilot to production when machines act in the physical world.</p>
+<p>Moderated by Jon Linden (Founder &amp; CEO, Ekkono Solutions), Kumar shared the panel with Daniel Langkilde
+(Co-founder &amp; CEO, Kognic), Susanne Timsjö (CEO, ABB Robotics Nordics), Leon Boschman (Digital Research
+Engineer, Chalmers / Sweden AI Factory), and Kristian Abel (Vice President, Complete Vehicle Engineering, Volvo
+Cars).</p>`,
+    tags: ["Panel Discussion", "Gothenburg Tech Week", "Physical AI", "Tech Blueprint"],
+  },
+  {
     sortDate: "2026-09-25",
     date: "21–25 September 2026",
     category: "Talk",
@@ -24,6 +41,20 @@ high-precision and heavy-load parallel kinematic manipulator applications.</p>
 <p>Kumar delivered the lecture <strong>"Modeling and Control of Series-Parallel Hybrid Robots"</strong> and
 organised an accompanying hands-on tutorial on the topic, using CloudPendulum, HyRoDyn, and Drake.</p>`,
     tags: ["Invited lecture", "Parallel robots", "Montpellier", "PKM 2026", "Summer School"],
+  },
+  {
+    sortDate: "2026-09-16",
+    date: "16 September 2026",
+    category: "Demonstration",
+    title: "RAIL demonstrates research at AI Sweden's \"Welcome to Physical AI\" event",
+    link: "https://en-gb.eu.invajo.com/event/aisweden/welcometophysicalaiwhereartificialintelligencemeetsthephysicalworld",
+    linkText: "Event page →",
+    body: `<p>RAIL demonstrated its research in collaboration with TCS at <strong>"Welcome to Physical AI — Where
+Artificial Intelligence Meets the Physical World,"</strong> hosted by AI Sweden together with NVIDIA, Zenseact,
+TCS, and Högskolan Väst at AI Sweden, Lindholmsplatsen, Gothenburg. The event combined keynotes on Physical AI
+with live robot demonstrations and exhibitions spanning autonomous driving, manufacturing, and advanced
+robotics, followed by a panel discussion on Physical AI challenges and opportunities in Sweden.</p>`,
+    tags: ["Demonstration", "Physical AI", "AI Sweden", "TCS", "Outreach"],
   },
   {
     sortDate: "2026-09-15",
