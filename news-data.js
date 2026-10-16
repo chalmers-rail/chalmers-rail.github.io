@@ -9,6 +9,24 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-10-16",
+    date: "16 October 2026",
+    category: "Grant",
+    title: "AoA Production grant for humanoid robots in industrial production",
+    link: "https://research.chalmers.se/en/project/13044",
+    linkText: "Project page →",
+    body: `<p>Chalmers Area of Advance Production has awarded 3,500,000 SEK for the project
+<strong>"From Lab to Line: Integration of Humanoid Robots in Industrial Production"</strong> (2027–2028), led by
+Robin Hanson (Technology Management and Economics) with Shivesh Kumar, Yasemin Bekiroglu (Electrical
+Engineering), and Björn Johansson (Production Systems, ME) as Co-PIs.</p>
+<p>The project investigates how humanoid robots can be integrated into existing industrial production systems
+as flexible, autonomous, and failure-resilient resources, moving beyond laboratory demonstrations to address
+the technical, operational, organisational, and human aspects of real-world deployment. Industrial use cases
+will be developed and evaluated together with partner companies, progressing from laboratory testing to
+industrial environments.</p>`,
+    tags: ["Grant", "AoA Production", "Humanoid Robots", "Industrial Production"],
+  },
+  {
     sortDate: "2026-10-13",
     date: "13 October 2026",
     category: "Panel Discussion",
