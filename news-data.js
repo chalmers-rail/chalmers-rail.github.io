@@ -9,6 +9,18 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-10-19",
+    date: "19 October 2026",
+    category: "Talk",
+    title: "Invited presentation to Gothenburg Opera and Chalmers management teams",
+    link: "",
+    linkText: "",
+    body: `<p>Shivesh Kumar gave an invited presentation, <strong>"Overview of Research at RAIL: Where Often
+Engineering Meets Arts,"</strong> to the management teams of Gothenburg Opera and Chalmers University of
+Technology.</p>`,
+    tags: ["Invited talk", "Outreach", "Gothenburg Opera"],
+  },
+  {
     sortDate: "2026-10-16",
     date: "16 October 2026",
     category: "Grant",
