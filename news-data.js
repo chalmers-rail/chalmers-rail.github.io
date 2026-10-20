@@ -102,10 +102,10 @@ organised an accompanying hands-on tutorial on the topic, using CloudPendulum, H
     category: "People",
     type: ["Defense"],
     title: "Xin Yi and Shimin Hu defend master's thesis",
-    link: "",
-    linkText: "",
+    link: "https://odr.chalmers.se/items/4c949332-ac96-40ef-81cd-e3d3c881f75d",
+    linkText: "Read thesis →",
     body: `<p>Congratulations to Xin Yi and Shimin Hu on defending their master's thesis,
-<strong>"Real-Time Procedural Audio-Motion Synchronization for the FIDO Quadruped,"</strong> at RAIL.</p>`,
+<strong>"Study of Real Time Aspects for Motion-Driven Music Generation for a Quadruped Robot,"</strong> at RAIL.</p>`,
     tags: ["Master's Thesis", "People", "FIDO", "Quadruped"],
   },
   {
