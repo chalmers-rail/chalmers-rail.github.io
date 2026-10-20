@@ -40,7 +40,9 @@
   </header>
 
   <section class="section">
-    <div class="container" id="news-container">
+    <div class="container">
+      <div class="pub-filter-bar" id="news-filter-bar"></div>
+      <div id="news-container"></div>
     </div>
   </section>
 
@@ -48,6 +50,22 @@
   <script>
     (function () {
       var container = document.getElementById("news-container");
+      var filterBar = document.getElementById("news-filter-bar");
+
+      var types = [];
+      RAIL_NEWS.forEach(function (item) {
+        item.type.forEach(function (t) {
+          if (types.indexOf(t) === -1) types.push(t);
+        });
+      });
+      types.sort();
+
+      filterBar.innerHTML =
+        '<button class="filter-btn active" data-filter="all">All</button>' +
+        types.map(function (t) {
+          return '<button class="filter-btn" data-filter="' + t + '">' + t + "</button>";
+        }).join("");
+
       RAIL_NEWS.forEach(function (item) {
         var tagsHtml = item.tags.length
           ? '<div class="project-tags">' +
@@ -58,7 +76,7 @@
           ? '<a href="' + item.link + '" target="_blank" class="project-link">' + item.linkText + "</a>"
           : "";
         container.innerHTML +=
-          '<div class="project-entry">' +
+          '<div class="project-entry" data-type="' + item.type.join("|") + '">' +
             '<div class="project-entry-header">' +
               "<div>" +
                 '<span class="project-funder">' + item.date + " · " + item.category + "</span>" +
@@ -68,6 +86,20 @@
             "</div>" +
             '<div class="project-entry-body">' + item.body + tagsHtml + "</div>" +
           "</div>";
+      });
+
+      var btns = filterBar.querySelectorAll(".filter-btn");
+      var entries = container.querySelectorAll(".project-entry");
+      btns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          btns.forEach(function (b) { b.classList.remove("active"); });
+          btn.classList.add("active");
+          var f = btn.dataset.filter;
+          entries.forEach(function (entry) {
+            var entryTypes = entry.dataset.type.split("|");
+            entry.style.display = (f === "all" || entryTypes.indexOf(f) !== -1) ? "" : "none";
+          });
+        });
       });
     })();
   </script>
