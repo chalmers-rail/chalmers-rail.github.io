@@ -14,11 +14,13 @@ const RAIL_NEWS = [
     category: "Talk",
     type: ["Talk"],
     title: "Invited presentation to Gothenburg Opera and Chalmers management teams",
-    link: "",
-    linkText: "",
+    link: "https://se.linkedin.com/posts/mariaelmquist_att-leda-kreativ-verksamhet-i-tider-av-activity-7518410278301138944-H2cR",
+    linkText: "View LinkedIn post →",
     body: `<p>Shivesh Kumar gave an invited presentation, <strong>"Overview of Research at RAIL: Where Often
 Engineering Meets Arts,"</strong> to the management teams of Gothenburg Opera and Chalmers University of
-Technology.</p>`,
+Technology, as part of a leadership exchange on leading creative work in times of rapid technological change.
+Guests also toured the Chalmers acoustics lab and saw recent robotics research, hosted together with Wolfgang
+Kropp and Jens Ahrens (Engineering Acoustics).</p>`,
     tags: ["Invited talk", "Outreach", "Gothenburg Opera"],
   },
   {
