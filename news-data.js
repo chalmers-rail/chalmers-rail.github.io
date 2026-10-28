@@ -9,6 +9,24 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-10-26",
+    date: "26–27 October 2026",
+    category: "Talk",
+    type: ["Talk"],
+    title: "Keynote at UTES 2026: Athletic Intelligence — Bridging Legged and Space Robotics",
+    link: "https://www.linkedin.com/posts/utes2026-robotics-autonomoussystems-share-7511837630180044802-OArf/",
+    linkText: "View LinkedIn post →",
+    body: `<p>Shivesh Kumar gave a keynote, <strong>"Athletic Intelligence: Bridging Legged and Space
+Robotics,"</strong> at the UTES 2026 (Unmanned Technologies for Earth and Space) symposium, held at Chalmers
+University of Technology, Gothenburg.</p>
+<p>The talk argued that a legged robot can be viewed as a spacecraft whose thrusters are its feet — in both
+cases, the central problem is achieving a desired center-of-mass motion with limited, constrained forces —
+connecting RAIL's work in legged and humanoid robotics, holistic design, dynamics, planning, control, and
+learning with emerging challenges in space robotics, particularly active debris removal, and outlining how the
+two communities can learn from each other.</p>`,
+    tags: ["Keynote", "UTES 2026", "Space Robotics", "Legged Robots", "Athletic Intelligence"],
+  },
+  {
     sortDate: "2026-10-19",
     date: "19 October 2026",
     category: "Talk",
