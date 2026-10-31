@@ -9,6 +9,19 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-10-31",
+    date: "31 October 2026",
+    category: "Outreach",
+    type: ["Outreach"],
+    title: "RAIL launches its YouTube channel",
+    link: "https://www.youtube.com/@Chalmers-RAIL",
+    linkText: "Visit the channel →",
+    body: `<p>The Robot Athletic Intelligence Lab has launched its own <strong>YouTube channel</strong>,
+bringing together talks, demonstrations, lectures, and panel discussions from the lab in one place.
+Subscribe to follow along with future robot demos, conference talks, and course material from RAIL.</p>`,
+    tags: ["YouTube", "Outreach"],
+  },
+  {
     sortDate: "2026-10-26",
     date: "26–27 October 2026",
     category: "Talk",
