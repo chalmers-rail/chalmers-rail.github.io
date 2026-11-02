@@ -9,6 +9,23 @@
 */
 const RAIL_NEWS = [
   {
+    sortDate: "2026-11-02",
+    date: "2 November 2026",
+    category: "Open Position",
+    type: ["Open Position"],
+    title: "Postdoc opening: Industrial Application of Humanoid Robots",
+    link: "https://lnkd.in/p/ecQfK9EM",
+    linkText: "View LinkedIn post →",
+    body: `<p>We are hiring a postdoctoral researcher to join a new interdisciplinary project at
+Chalmers moving humanoid robots beyond laboratory demonstrations towards becoming flexible,
+resilient participants in real industrial production systems. The project is led by four senior
+researchers across the divisions of Supply and Operations Management, Production Systems,
+Dynamics, and Systems and Control, combining laboratory experiments with industrial use cases
+such as machine tending, kitting, line replenishment, and mixed-object handling.
+<strong>Application deadline: 30 November 2026.</strong></p>`,
+    tags: ["Postdoc", "Humanoid robotics", "Industrial automation", "Production systems"],
+  },
+  {
     sortDate: "2026-10-31",
     date: "31 October 2026",
     category: "Outreach",
